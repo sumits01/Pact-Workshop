@@ -30,9 +30,8 @@ describe("Pact Verification", () => {
       logLevel: "INFO",
       provider: "FilmsProvider",
       providerBaseUrl: "http://localhost:3000",
-      pactBrokerUrl: process.env.PACT_BROKER_URL || "http://localhost:8000",
-      pactBrokerUsername: process.env.PACT_BROKER_USERNAME || "pact_workshop",
-      pactBrokerPassword: process.env.PACT_BROKER_PASSWORD || "pact_workshop",
+      pactBrokerUrl: process.env.PACT_BROKER_URL || "https://sumit.pactflow.io/",
+      pactBrokerToken: process.env.PACT_BROKER_USERNAME || "FTA7sO4oQ1WRIvzloM3EKA",
       providerVersion: "1.0.0",
       publishVerificationResult: true,
       stateHandlers: {

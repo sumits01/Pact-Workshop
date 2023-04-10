@@ -2,7 +2,7 @@ const pact = require("@pact-foundation/pact-node");
 const path = require("path");
 
 let pactBrokerUrl =
-  process.env.PACT_BROKER_URL || "https://franciscomoreno.pactflow.io";
+  process.env.PACT_BROKER_URL || "https://sumit.pactflow.io";
 
 const gitHash =
   require("child_process")
@@ -13,7 +13,7 @@ const gitHash =
 const opts = {
   pactFilesOrDirs: [path.resolve(__dirname, "../pacts/")],
   pactBroker: pactBrokerUrl,
-  pactBrokerToken: "jiH7q2QKCiMvYW4Y1OREpQ",
+  pactBrokerToken: "FTA7sO4oQ1WRIvzloM3EKA",
   tags: ["prod", "test"],
   consumerVersion: gitHash,
 };
